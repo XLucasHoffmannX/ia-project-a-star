@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <title>A Estrela</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Algoritmo A*</h1>
+            <h2>Buscar pelo menor caminho em uma rede</h2>
+            <h2>Antonio, Cassio e Lucas</h2>
+        </div>
+        <div id="main" class="main">
+            <div class="control">
+                <svg id="svg" style="width:100vh;height:100%;position:absolute;"></svg>
+                <div id="points" class="points"></div>
+            </div>
+        </div>
+
+        <!-- <div class="button-container">
+            <button onclick="main()">Gerar um caminho e suas linhas</button>
+        </div> -->
+        <div class="button_control">
+            <form action="" class="form">
+                <span>Defina seu objetivo:</span>
+                <div class="inputs">
+                    <input id="initial" type="text" placeholder="Ponto inicial (0 a 15)" required/>
+                    <input id="final" type="text" placeholder="Ponto final (0 a 15)" required/>
+                </div>
+                <div class="btn">
+                    <button>Ver menor caminho!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="assets/scripts/app.js"></script>
+    <script src="assets/scripts/aStar.js"></script>
+    <script src="assets/scripts/draw.js"></script>
+</body>
+
+</html>

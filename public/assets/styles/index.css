@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+:root {
+    font-size: 62.5%;
+}
+
+@keyframes left {
+    from {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    background: rgb(112, 112, 243);
+    overflow-x: auto;
+}
+
+.header{
+    text-align: center;
+    color: #fff;
+    animation: up .5s;
+}
+
+.header h1{
+    font-size: 42px;
+    margin-top: 2rem;
+}
+
+.main {
+    width: 86.4vh;
+    height: 258px;
+    position: relative;
+    margin: auto;
+    animation: up .5s;
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.points {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#points{
+    display: flex;
+    align-items: center;
+
+}
+
+.button_control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 500px;
+}
+
+.button_control form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.button_control form span{
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.button_control form img{
+    width: 200px;
+    height: 200px;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button_control form input{
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding-left: 1rem;
+    height: 45px;
+    font-size: 16px;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button{
+    border: none;
+    outline: none;
+    background-color: #21CE99;
+    color: #fff;
+    height: 60px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    transform: scale(1.015);
+}
