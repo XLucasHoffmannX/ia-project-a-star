@@ -162,7 +162,7 @@ function main(initial, final) {
         const end = Number(final);
         
         console.log(window.screen.width)
-        const [M, points] = fillMatrix(4, 1280);
+        const [M, points] = fillMatrix(4, 1920);
         drawPoints(points, start, end);
 
         ended = false;

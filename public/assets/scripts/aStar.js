@@ -19,7 +19,7 @@ async function AStar(M, start, end, points) {
         current = queue.dequeue();
         /* desenhando caminho atual */
         drawLine(points[current], points[prevVertex[current]], 5, "blue");
-        await sleep(350);
+        await sleep(100);
 
         if (current === end) {
             break;
